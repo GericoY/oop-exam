@@ -17,17 +17,17 @@ class Medicine extends Product{
     }
 	
 	function getDose(){
-        return $this->$dose;
+        return $this->dose;
     }
 	function getType(){
-        return $this->$type;
+        return $this->type;
     }
 	function getExpirationDate(){
-        return $this->$expirationDate;
+        return $this->expirationDate;
     }
 	
 	function computeSRP() {
-		return $this->price * 2;
+		return $this->getPrice() * 2;
 	}
 }
 ?>
